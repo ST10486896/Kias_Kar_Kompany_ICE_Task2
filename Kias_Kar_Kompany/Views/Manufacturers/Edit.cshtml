@@ -1,0 +1,21 @@
+﻿@model Kias_Kar_Kompany.Models.Manufacturer
+
+<h1>Edit</h1>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label asp-for="Manufacturer_Name"></label>
+        <input asp-for="Manufacturer_Name" />
+    </div>
+
+    <div>
+        <label asp-for="Manufacturer_Country"></label>
+        <input asp-for="Manufacturer_Country" />
+    </div>
+
+    <button type="submit">Save</button>
+</form>
+
+<a asp-action="Index">Back</a>

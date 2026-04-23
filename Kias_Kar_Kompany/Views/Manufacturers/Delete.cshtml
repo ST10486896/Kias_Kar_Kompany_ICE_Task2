@@ -1,0 +1,17 @@
+﻿@model Kias_Kar_Kompany.Models.Manufacturer
+
+<h1>Delete</h1>
+
+<h3>Are you sure?</h3>
+
+<div>
+    <p>@Model.Manufacturer_Name</p>
+    <p>@Model.Manufacturer_Country</p>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Delete</button>
+</form>
+
+<a asp-action="Index">Cancel</a>
